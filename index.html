@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Pratice</title>
+</head>
+<body>
+    
+    <section id="controlPanel">
+        <h1>Hello <select class="name">
+            <option value="Alex">Alex</option>
+            <option value="Phoebe">Phoebe</option>
+            <option value="Charlotte">Charlotte</option>
+        </select>, Math is good</h1>
+    <p class="score">Your Score is now 
+        <!-- <script type="'text/javascript">document.write(scores[name])</script>. -->
+        <span id="score"></span>
+    </p>
+    <div class="qty" id="qty">        
+        <select name="qty" id="qtySelect">
+            <option value=5>5</option>
+            <option value=10>10</option>
+            <option value=20>20</option>
+            <option value=30>30</option>
+        </select>
+    <button id="generateQuestions" style="float:right">Generate Questions</button>
+    </div>
+
+    </section>
+    <section class="display-content">
+        <div class="">
+        <div style="font-size:20px; text-align: center;"> The questions come below:</div>
+        <div class="content"></div>     
+    </div>       
+    </section>
+    <section id="footer">
+        <div class="checkAnswer">
+            <button id="checkAnswer" onclick="checkAnswer()">Check Answer</button>
+        </div>       
+        
+    </section>    
+    
+    <script src="temp.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
