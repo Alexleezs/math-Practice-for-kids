@@ -28,10 +28,16 @@ const nameSelect=document.querySelector('.name');
 function createQuestions(qty) {
     const operations=['+','-']
     questions.length=0;
+    let maxNumber1=10;
+    let maxNumber2=10;
+    if (scores.name=='Phoebe') {
+        maxNumber1=100;
+        maxNumber2=100;
+    }
     for (index=0; index<qty; index++) {
-       let a=Math.floor(Math.random()*50)
-        let b=Math.floor(Math.random()*50)
-        let num1=0, num2=0;
+       let a=Math.floor(Math.random()*maxNumber1)
+        let b=Math.floor(Math.random()*maxNumber2)
+        let num1, num2;
         if (a>b) {
             num1=a  ;
             num2=b  ;
